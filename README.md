@@ -37,11 +37,11 @@ The final selected model is **Logistic Regression** (`C=1.0`, `solver=lbfgs`, `c
 | # | Notebook | Purpose |
 |---|----------|---------|
 | 1 | `Visualization.ipynb` | Produces all report figures: feature histograms, box plots, correlation heatmap, ROC curves. |
-| 2 | `breast_cancer_Modelling.ipynb` | Main pipeline. EDA, feature selection, model comparison (LR, Decision Tree, SVM, EBM), and final model evaluation. |
-| 3 | `Iterative_VIF_Feature_Elimination.ipynb` | Baseline: removes features with VIF > 10 one at a time. Retained as a methodological foil: shows VIF elimination discards high-signal features. |
-| 4 | `Combined_Feature_Elimination.ipynb` | Domain drops first (area, perimeter, concavity), then VIF elimination on remainder. |
+| 2 | `Iterative_VIF_Feature_Elimination.ipynb` | Baseline: removes features with VIF > 10 one at a time. Retained as a methodological foil: shows VIF elimination discards high-signal features. |
+| 3 | `Combined_Feature_Elimination.ipynb` | Domain drops first (area, perimeter, concavity), then VIF elimination on remainder. |
+| 4 | `breast_cancer_Modelling.ipynb` | Main pipeline. manual feature selection, model comparison (LR, Decision Tree, SVM, EBM), and model evaluation. |
 | 5 | `Cross-Validation.ipynb` | Compares LR vs Linear SVM under 30-seed split sweep and 10×10 repeated K-fold. Confirms LR stability advantage. |
-| 6 | `LR_threshold_optimization.ipynb` | Sweeps classification thresholds 0.25–0.50 under 10×10 repeated stratified K-fold. Identifies threshold 0.45 as the operating point. |
+| 6 | `LR_threshold_optimization.ipynb` | Sweeps classification thresholds 0.25–0.50 under 10×10 repeated stratified K-fold. Identifies threshold 0.35 as the operating point. |
 | 7 | `feature_importance_explainer.ipynb` | Per-patient explanation: coefficient × standardised feature value breakdown. Produces contribution bar charts for individual predictions. |
 
 ---
