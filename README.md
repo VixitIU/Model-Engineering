@@ -11,7 +11,7 @@
 
 This project builds an interpretable binary classifier to distinguish malignant from benign breast tumours using the WDBC dataset. The primary optimisation target is **minimising false negatives** (missed malignancies); F1 score on the malignant class is the reported headline metric, with a project target of F1 > 0.95.
 
-The final selected model is **Logistic Regression** (`C=1.0`, `solver=lbfgs`, `class_weight="balanced"`, `threshold=0.45`) trained on a **21-feature set** that drops the area, perimeter, and concavity feature families while retaining radius, texture, smoothness, compactness, symmetry, concave ponts and fractal dimension across all three measurement types (_mean, _se, _worst).
+The final selected model is **Logistic Regression** (`C=1.0`, `solver=lbfgs`, `class_weight="balanced"`, `threshold=0.35`) trained on a **21-feature set** that drops the area, perimeter, and concavity feature families while retaining radius, texture, smoothness, compactness, symmetry, concave ponts and fractal dimension across all three measurement types (_mean, _se, _worst).
 
 ---
 
